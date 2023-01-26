@@ -38,7 +38,7 @@ namespace COMP003A.Assignment2
             Console.WriteLine($"{integer1} / {integer2} = {integer1 / integer2}");
             Console.WriteLine($"{integer1} % {integer2} = {integer1 % integer2}\n");
 
-            /* Circle Area and CirCUMference */
+            /* Circle Area and Circumference */
             Console.Write("Give a Radius of a Circle: ");
             double radius = Convert.ToDouble(Console.ReadLine());
             double area = Math.PI * Math.Pow(radius, 2);
