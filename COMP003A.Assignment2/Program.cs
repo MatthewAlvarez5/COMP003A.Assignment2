@@ -14,6 +14,9 @@ namespace COMP003A.Assignment2
             Console.ForegroundColor = ConsoleColor.White;
 
             /* String section */
+            Console.WriteLine("------------------------------------------------------------------------");
+            Console.WriteLine("String Section");
+            Console.WriteLine("------------------------------------------------------------------------");
             Console.Write("What is Your First Name?: ");
             string firstName = Console.ReadLine();
             Console.Write("What is Your Middle Name?: ");
@@ -26,6 +29,9 @@ namespace COMP003A.Assignment2
             Console.WriteLine($"Hello, {firstName} {middleName} {lastName}. You were born in {yearBorn}.\n");
 
             /* Math Section */
+            Console.WriteLine("------------------------------------------------------------------------");
+            Console.WriteLine("Math Section");
+            Console.WriteLine("------------------------------------------------------------------------");
             Console.Write("Enter a digit: ");
             string integer1Text = Console.ReadLine();
             int integer1 = Convert.ToInt32(integer1Text);
@@ -39,6 +45,9 @@ namespace COMP003A.Assignment2
             Console.WriteLine($"{integer1} % {integer2} = {integer1 % integer2}\n");
 
             /* Circle Area and Circumference */
+            Console.WriteLine("------------------------------------------------------------------------");
+            Console.WriteLine("Circle Area & Circumference Section");
+            Console.WriteLine("------------------------------------------------------------------------");
             Console.Write("Give a Radius of a Circle: ");
             double radius = Convert.ToDouble(Console.ReadLine());
             double area = Math.PI * Math.Pow(radius, 2);
