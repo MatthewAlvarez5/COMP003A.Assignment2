@@ -1,7 +1,7 @@
 ﻿/*
     * Author: Matthew Alvarez
     * Course: COMP-003A
-    * Purpose: Assignment for Week 2 
+    * Purpose: Assignment for Week 2 Simple String and integer conversions
 */
 namespace COMP003A.Assignment2
 {
@@ -14,24 +14,37 @@ namespace COMP003A.Assignment2
             Console.ForegroundColor = ConsoleColor.White;
 
             /* String section */
-            Console.WriteLine("What is Your First Name?");
+            Console.Write("What is Your First Name?: ");
             string firstName = Console.ReadLine();
-            Console.WriteLine("What is Your Middle Name?");
+            Console.Write("What is Your Middle Name?: ");
             string middleName = Console.ReadLine();
-            Console.WriteLine("What is Your Last Name?");
+            Console.Write("What is Your Last Name?: ");
             string lastName = Console.ReadLine();
-            Console.WriteLine("How old will you be in 2023?");
+            Console.Write("How old will you be in 2023?: ");
             string inputAge = Console.ReadLine();
             int yearBorn = 2023 - Convert.ToInt32(inputAge);
-            Console.WriteLine($"Hello, {firstName} {middleName} {lastName}. You were born in {yearBorn}.");
+            Console.WriteLine($"Hello, {firstName} {middleName} {lastName}. You were born in {yearBorn}.\n");
 
             /* Math Section */
-            Console.WriteLine("Enter a digit:");
-            string integer1 = Console.ReadLine();
+            Console.Write("Enter a digit: ");
+            string integer1Text = Console.ReadLine();
+            int integer1 = Convert.ToInt32(integer1Text);
+            Console.Write("Enter a second digit: ");
+            string integer2Text = Console.ReadLine();
+            int integer2 = Convert.ToInt32(integer2Text);
+            Console.WriteLine($"{integer1} + {integer2} = {integer1 + integer2}");
+            Console.WriteLine($"{integer1} - {integer2} = {integer1 - integer2}");
+            Console.WriteLine($"{integer1} * {integer2} = {integer1 * integer2}");
+            Console.WriteLine($"{integer1} / {integer2} = {integer1 / integer2}");
+            Console.WriteLine($"{integer1} % {integer2} = {integer1 % integer2}\n");
 
-            Console.WriteLine("Enter a second digit:");
-            string integer2 = Console.ReadLine();
-
+            /* Circle Area and CirCUMference */
+            Console.Write("Give a Radius of a Circle: ");
+            double radius = Convert.ToDouble(Console.ReadLine());
+            double area = Math.PI * Math.Pow(radius, 2);
+            double circumference = 2 * Math.PI * radius;
+            Console.WriteLine($"With a radius of {radius}, the area is: {area}, the circumference is: {circumference}");
+            Console.WriteLine("This is the end of our journey today, salutations!");
         }
     }
 }
